@@ -1,8 +1,15 @@
 
 
 const Home = (props) => {
-    console.log(props)
-//   return  <div> {props.id} {props.name} {props.description} {props.price} </div>
+    const printDishes = props.dishes.map((dish) => {
+    return <div>
+        <p>Plato: {dish.name}</p>
+        <p>Descripción: {dish.description}</p>
+        <p>Precio: {dish.price}€</p>
+    </div>
+})
+
+  return  <div> {printDishes} </div>
   
 }
 
