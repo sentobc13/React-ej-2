@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 const Header = () => {
   return (
-    <nav class="menu">
+    <nav className="menu">
       <Link to="/">Home</Link>
       <Link to="/reserva">Rserva</Link>
       <Link to="/sobrenosotros">Sobre Nostros</Link>
