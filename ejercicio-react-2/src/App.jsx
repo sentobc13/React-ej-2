@@ -89,4 +89,4 @@ function App() {
 
 export default App
 
-//<Home dishes={dishes} />
+

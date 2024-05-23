@@ -1,5 +1,5 @@
 import React from 'react';
-import './Home.css';
+
 
 const Home = (props) => {
     const printDishes = props.dishes.map((dish) => {
