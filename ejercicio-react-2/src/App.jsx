@@ -1,4 +1,5 @@
 
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 import Home from './components/Home/Home.jsx'
 import Header from './components/Header/Header.jsx'
@@ -70,15 +71,20 @@ function App() {
       price: 30
     }
   ]
-  
+
   return (
-      <div>
-        <Header/>
-        <Home dishes={dishes} />
-        <ReserveForm/>
-   
-      </div>
+    <>
+      <BrowserRouter>
+          <Header />
+        <Routes>
+          <Route path= '/' element={<Home dishes={dishes}/>}/>
+          <Route path= '/reserva' element={<ReserveForm/>}/>
+        </Routes>
+      </BrowserRouter>
+    </>
   )
 }
 
 export default App
+
+//<Home dishes={dishes} />

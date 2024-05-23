@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 
 
+
 export const ReserveForm = () => {
     const initialValues = {
         nombre: "",
@@ -29,7 +30,7 @@ const handleInputChange = (e) => {
 
 const handleSubmit = (e) => {
     e.preventDefault()
-    console.log(data);
+    localStorage.setItem('reserva', JSON.stringify(data))
     clearValues();
 }
 

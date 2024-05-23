@@ -9,7 +9,10 @@ const Home = (props) => {
     </div>
 })
 
-  return  <div> {printDishes} </div>
+  return  <div> 
+    <h2>Menú</h2>
+    {printDishes} 
+    </div>
   
 }
 
